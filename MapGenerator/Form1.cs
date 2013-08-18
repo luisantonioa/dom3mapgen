@@ -632,7 +632,7 @@ namespace MapGenerator
             return points;
         }
 
-        private TaskScheduler uithread;
+        //private TaskScheduler uithread;
 
         private static double p, q;
 
@@ -727,12 +727,12 @@ namespace MapGenerator
             return result;
         }
 
-        private int Width()
+        public new int Width()
         {
             return picDiagram.Image == null ? Convert.ToInt32(txtWidth.Value) : picDiagram.Image.Width;
         }
 
-        private int Height()
+        public new int Height()
         {
             return picDiagram.Image == null ? Convert.ToInt32(txtHeight.Value) : picDiagram.Image.Height;
         }
